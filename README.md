@@ -16,6 +16,8 @@ My homepage about intro &amp; experience &amp; life &amp; book
   edited on 2023/12/1
 
 ## 说明
-
-在本地执行build之后，执行git commit，然后推送到远程仓库，推送到远程仓库会触发Github Action自动执行重新部署站点
+- 阶段1<br>
+  本地完成代码编写后，执行`npm run deploy`命令，执行deploy.sh脚本，完成半自动build和push代码至gh-pages分支；gh-pages分支为打包构建好的前端资源。
+- 阶段2<br>
+  在本地执行build之后，执行git commit，然后推送到远程仓库，推送到远程仓库会触发Github Action自动执行重新部署站点
 [HOMEPAGE](https://tonyzhang1993.github.io/homepage/)
