@@ -20,7 +20,7 @@ jobs:
       - name: pnpm-setup
         uses: pnpm/action-setup@v2 # Uncomment this if you're using pnpm
         with:
-          version: 7.9.5
+          version: 7
       # - uses: oven-sh/setup-bun@v1 # Uncomment this if you're using Bun
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install # or pnpm install / yarn install / bun install
       - name: Build with VitePress
-        run: pnpm docs:build
+        run: pnpm run docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
